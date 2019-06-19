@@ -8,9 +8,17 @@
  *    4. Writes the new file to the file located at `writePath`
  */
 
+var Promise = require('bluebird');
+var asyncLib = require('../../lib/asyncLib.js');
 
 var combineFirstLineOfManyFiles = function(filePaths, writePath) {
  // TODO
+  Promise.all([
+    asyncLib.getValueA(),
+    asyncLib.getValueB(),
+    asyncLib.getValueC(),
+    asyncLib.getValueD()    
+  ])
 };
 
 // Export these functions so we can unit test them
